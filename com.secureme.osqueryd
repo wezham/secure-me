@@ -7,7 +7,6 @@
     <key>ProgramArguments</key>
     <array>
       <string>/usr/local/bin/osqueryd</string>
-      <string>--flagfile=/etc/osquery/osquery.flags</string>
       <string>--config_path=/etc/osquery/osquery.conf</string>
     </array>
     <key>RunAtLoad</key>

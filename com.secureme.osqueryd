@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>com.secureme.osqueryd</string>
+    <key>ProgramArguments</key>
+    <array>
+      <string>/usr/local/bin/osqueryd</string>
+      <string>--flagfile=/etc/osquery/osquery.flags</string>
+      <string>--config_path=/etc/osquery/osquery.conf</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>StandardErrorPath</key>
+    <string>/var/log/osquery/osqueryd.err.log</string>
+    <key>StandardOutPath</key>
+    <string>/var/log/osquery/osqueryd.log</string>
+    <key>WorkingDirectory</key>
+    <string>/usr/local/var/osquery</string>
+  </dict>
+</plist>
